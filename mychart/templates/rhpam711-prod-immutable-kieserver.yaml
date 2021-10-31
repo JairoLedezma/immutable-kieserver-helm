@@ -74,7 +74,7 @@ parameters:
   - displayName: Database service Port
     description: Sets the datasource service port. Use this if you want to use the predefined mysql or postgresql datasource properties. Leave blank if the KIE_SERVER_EXTERNALDB_URL parameter is set.
     name: KIE_SERVER_EXTERNALDB_SERVICE_PORT
-    value: 
+    value: {{ .Values.KIE_SERVER_EXTERNALDB_SERVICE_PORT | quote}}
     required: false
   - displayName: Non XA datasource
     description: Sets the datasources type. It can be XA or NONXA. For non XA set it to true. Default value is true.
@@ -289,7 +289,7 @@ parameters:
   - displayName: KIE Server Container CPU Limit
     description: KIE Server Container CPU limit.
     name: KIE_SERVER_CPU_LIMIT
-    value: 2
+    value: {{ .Values.KIE_SERVER_CPU_LIMIT | quote}}
     required: true
   - displayName: KIE Server Container CPU Request
     description: KIE Server Container CPU request.
