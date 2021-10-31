@@ -1,6 +1,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 prefix: 
+NAMESPACE: jl-rds-temp-sandbox
 # Name of the kieserver deployment
 APPLICATION_NAME: myapp
 # The name where credentials secret are found

@@ -12,8 +12,11 @@ metadata:
     template.openshift.io/documentation-url: https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.11/html/deploying_a_red_hat_process_automation_manager_7.11_immutable_server_environment_on_red_hat_openshift_container_platform/
     template.openshift.io/support-url: https://access.redhat.com
     template.openshift.io/bindable: "false"
+    meta.helm.sh/release-name: {{ .Values.APPLICATION_NAME }}
+    meta.helm.sh/release-namespace: {{ .Values.NAMESPACE }}
   name: rhpam711-prod-immutable-kieserver
 labels:
+  app.kubernetes.io/managed-by: Helm
   template: rhpam711-prod-immutable-kieserver
   rhpam: "7.11"
 message: |-
