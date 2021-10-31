@@ -15,7 +15,7 @@ KIE_SERVER_EXTERNALDB_DIALECT: org.hibernate.dialect.PostgreSQL95Dialect
 # Host of the external DB
 KIE_SERVER_EXTERNALDB_SERVICE_HOST: 
 # Port of the external DB
-KIE_SERVER_EXTERNALDB_SERVICE_PORT:
+KIE_SERVER_EXTERNALDB_SERVICE_PORT: 
 # The driver for the external DB
 KIE_SERVER_EXTERNALDB_DRIVER: postgresql
 # Name of the external DB in the postrges server
